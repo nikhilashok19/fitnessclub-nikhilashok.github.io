@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/bg.jpg');
+            background-size: 100%;
+        }
+
+
+        #left {
+            font-family: 'Fugaz One', cursive;
+            color: aliceblue;
+            display: inline-block;
+            position: absolute;
+            top: 32px;
+            width: 160px;
+            height: 105px;
+        }
+
+        .mid {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            display: block;
+            margin: auto;
+            width: 47%;
+            padding: 3px 2px;
+            border-radius: 73px;
+            box-sizing: border-box;
+        }
+
+        #right {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 32px;
+        }
+
+        .head {
+            margin: 32px 21px;
+        }
+
+        .mid ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0px 16px;
+        }
+
+        .mid ul {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .mid ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px 10px;
+        }
+
+        #logo {
+            width: 235px;
+            height: 188px;
+            position: absolute;
+            left: -47px;
+            top: -43px;
+        }
+
+        #text {
+            position: absolute;
+            top: 107px;
+            left: 23px;
+        }
+
+        .btn {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ececec;
+            padding: 5px 24px;
+            margin: 9px 6px;
+            border-radius: 17px;
+            width: 121px;
+            height: 40px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        .mid:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .mid:hover>ul>li>a {
+            color: black;
+        }
+
+        .mid>ul>li>a:hover {
+            color: rgb(27, 0, 159);
+        }
+
+        .formspc {
+            border: 1.5px solid rgb(255, 255, 255);
+            width: 302px;
+            border-radius: 29px;
+            margin-top: 104px;
+            margin-left: 77px;
+            padding: 13px 24px;
+        }
+
+        .textbox {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(238, 238, 238);
+            display: block;
+            padding: 11px 13px;
+            margin: 14px auto;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+            width: 232px;
+        }
+
+        .textbox:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .formspc h3 {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 24px;
+            margin: 5px auto;
+        }
+
+        .gender {
+            width: 226px;
+            margin-left: 21px;
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .gender span {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: rgb(126, 126, 126);
+            margin-left: 34px;
+        }
+
+        .gender select {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            background-color: rgb(51, 69, 119);
+            color: rgb(255, 255, 255);
+            width: 104px;
+            height: 29px;
+            border-radius: 11px;
+            text-align: center;
+            margin-left: 7px;
+            border: none;
+        }
+
+        .gender:hover {
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .gender>select:hover {
+            background-color: rgb(50, 64, 102);
+            cursor: pointer;
+        }
+
+        #Submit {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(49, 49, 49);
+            font-size: 15px;
+            width: 178px;
+            margin-left: 56px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="navbar" id="left">
+            <img src="Images/Logo.png" alt="Error Loading" id="logo">
+            <span id="text">Fitness Club</span>
+        </div>
+        <nav class="mid">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="#">Men Fitness</a></li>
+                <li><a href="#">Women Fitness</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="navbar" id="right">
+            <a href="#">
+                <button class="btn">learn More</button>
+            </a>
+            <a href="mailto:nikhilashok19@gmail.com">
+                <button class="btn">Contact Us</button>
+            </a>
+        </div>
+    </header>
+    <div class="formspc">
+        <h3>Join Us</h3>
+        <form action="noaction.php" class="form">
+            <input type="text" class="textbox" placeholder="Enter your Name">
+            <div class="gender">
+                <span>Gender</span>
+                <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <input type="text" class="textbox" placeholder="Enter your Age">
+            <input type="text" class="textbox" placeholder="Enter your Contact No">
+            <button class="btn" id="Submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
